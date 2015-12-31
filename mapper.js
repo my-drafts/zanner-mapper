@@ -6,8 +6,8 @@ function mapper(_keyCompare){
 	};
 	//
 	this.get = function(key){
-		return items.find(function(){
-			return fKeyCompare
+		return items.find(function(item, index){
+			return fKeyCompare(key, item.key)==0;
 		});
 	};
 };
