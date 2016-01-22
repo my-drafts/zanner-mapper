@@ -5,25 +5,11 @@ var of = require('zanner-typeof').of;
 var ofs = require('zanner-typeof').ofs;
 var _mapper = require('./_mapper');
 
-function compareFunction(id1, id2){
-
-};
-
-function mapFunction(item, index){
-
-};
-
-function filterFunction(id, data, index){
-
-};
-
-function reduceFunction(itemPrevious, itemCurrent, index){
-
-};
-
-function sortFunction(item1, item2){
-
-};
+function compareFunction(id1, id2){};
+function mapFunction(item, index){};
+function filterFunction(id, data, index){};
+function reduceFunction(itemPrevious, itemCurrent, index){};
+function sortFunction(item1, item2){};
 
 function mapper(){
 	var items = [];
@@ -33,8 +19,9 @@ function mapper(){
 	};
 
 	this.item = function(path, acrion){
-		
-		_mapper.setItem(items, acrion, path, compareFunction);
+		_mapper.setItem(items, acrion, path, function(id1, id2){
+
+		});
 	};
 
 	this.key = function(index){
